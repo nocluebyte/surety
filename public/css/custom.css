@@ -1,0 +1,183 @@
+.switch input:empty~span:before {
+	/*EEE5FF*/
+    background-color: #DECCFF;
+}
+.form-control {
+	border: 1px solid #D9D9D9;
+}
+.border-right-1 {
+    border-right: 1px solid gainsboro;
+}
+
+/* sticky footer */
+div.card-footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+}
+/* Hide Input Number Arrows */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.text-dark-50 {
+	color: #646676!important;
+}
+
+/* Tree view css */
+.k-checkbox.k-state-indeterminate, .k-checkbox:indeterminate {
+    color: #3c3b90 !important;
+}
+.k-checkbox {
+    color: #3c3b90 !important;
+}
+.k-checkbox:checked {
+    color: #3c3b90 !important;
+}
+.k-checkbox:hover {
+    color: #3c3b90 !important;
+}
+.k-checkbox:checked:focus {
+    box-shadow: 0 0 3px 0 #3c3b90 !important;
+    border-color: #3c3b90 !important;
+}
+.k-checkbox:focus {
+    box-shadow: 0 0 3px 0 #3c3b90 !important;
+    border-color: #3c3b90 !important;
+}
+.k-treeview-leaf.k-selected.k-hover, .k-treeview-leaf.k-selected:hover {
+    background-color: #3c3b90 !important;
+}
+.k-treeview-leaf.k-selected {
+    background-color: #3c3b90 !important;
+}
+/* ------------- */
+
+/* Css class for Filter Info */
+.filterInfo {
+    text-align: center; 
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+/* ------------- */
+
+/*css class for remove filter data*/
+.remove-filter:hover{
+    text-decoration: line-through !important;
+}
+/*end remove filter*/
+.select2-container--disabled{
+    background-color: aliceblue !important;
+    border-color: aliceblue !important;
+    color: #3f4254 !important;
+    font-weight: 600 !important;
+}
+.select2-container--disabled > .selection > .select2-selection{
+    background-color: #d7d7d7 !important;
+    border-color: #d7d7d7 !important;
+    color: #3f4254 !important;
+}
+.select2-container--disabled > .selection > .select2-selection > .select2-selection__rendered{
+    background-color: #d7d7d7 !important;
+    border-color: #d7d7d7 !important;
+    color: #3f4254 !important;
+}
+.f-15{
+    font-size: 15px !important;
+}
+.min-width-300 {
+    min-width: 300px!important;
+}
+.min-width-150 {
+    min-width: 150px!important;
+}
+.min-width-100 {
+    min-width: 100px!important;
+}
+.min-width-200 {
+    min-width: 200px!important;
+}
+.p-8{
+    padding: 8px !important;
+}
+.davy-grey-color{
+    color:#575656 !important;
+}
+.hr-border{
+    border-top: 1px dotted black !important;
+}
+.timeline.timeline-6 .timeline-item .timeline-label{
+    width: 150px;
+}
+.timeline.timeline-6:before{
+    left: 152px;
+}
+.text-black{
+    color : #000000 !important;
+}
+.will-change-transform{
+    will-change: transform !important;
+}
+.transform-translate3d{
+    transform: translate3d(-101px, -157px, 0px) !important;
+}
+.dms-fa-lock{
+    top: -2px !important;
+    right: 4px !important;
+    min-height : 36px !important;
+}
+
+.text-light-grey{
+    color : #9d9595 !important;
+}
+.text-primary{
+    color: #3c3b90 !important;
+}
+.w-35 {
+    width: 35% !important;
+}
+.w-30 {
+    width: 30% !important;
+}
+.w-40 {
+    width: 40% !important;
+}
+.w-10 {
+    width: 10% !important;
+}
+.nbi-table  th {
+  border: 1px solid;
+}
+.nbi-table  td {
+  border: 1px solid;
+}
+.w-60 {
+    width: 60% !important;
+}
+.table-layout-fixed{
+    table-layout: fixed;
+}
+
+.rejectProposal{
+    position: absolute;
+    right: 87px;
+    bottom: 29px;
+}
+.approveButton{
+    position: absolute;
+    left: 75px;
+}
+.swal2-actions:has(.approveButton){
+    width: auto;
+}

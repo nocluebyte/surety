@@ -1,0 +1,38 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::table('invocation_notification', function (Blueprint $table) {
+            $table->unsignedBigInteger('version')->nullable()->after('proposal_id');
+        });
+        Schema::table('invocation_claims', function (Blueprint $table) {
+            DB::statement("ALTER TABLE `invocation_claims` CHANGE `bond_id` `proposal_id` INT(11) NULL DEFAULT NULL;");
+        });
+        Schema::table('invocation_claims', function (Blueprint $table) {
+            $table->unsignedBigInteger('version')->nullable()->after('proposal_id');
+        });
+        
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::table('invocation_notification', function (Blueprint $table) {
+            $table->dropColumn('version');
+        });
+        Schema::table('invocation_claims', function (Blueprint $table) {
+            $table->dropColumn('version');
+        });
+    }
+};

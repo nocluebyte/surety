@@ -1,0 +1,104 @@
+
+.modal .modal-dialog-aside{ 
+width: 444px; max-width:80%; height: 100%; margin:0;transform: translate(0); transition: transform .2s;
+}
+.modal .modal-dialog-aside .modal-content{  height: inherit; border:0; border-radius: 0;}
+.modal .modal-dialog-aside .modal-content .modal-body{ overflow-y: auto }
+.modal.fixed-left .modal-dialog-aside{ margin-left:auto;  transform: translateX(100%); }
+.modal.fixed-right .modal-dialog-aside{ margin-right:auto; transform: translateX(-100%); }
+.modal.show .modal-dialog-aside{ transform: translateX(0);  }
+
+body{overflow-x:hidden;}
+
+.modal-open {
+    overflow: hidden !important;
+}
+
+@media (min-width: 992px){
+	.wrapper {
+	    margin: 20px 0!important;
+	    margin-left: 100px!important;
+	    margin-right: 10px!important;
+	}
+}
+
+@media (min-width: 992px){
+	.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+	    padding: 0 15px; 
+	}
+}
+
+.aside {
+    width: 100px!important;
+}
+
+.text-blue{
+	color: #009EF7!important;
+	background-color: #e0f1fb!important;
+}
+
+.label.label-light-success {
+    background-color: #d8fbf9!important;
+}
+
+.label.label-light-dark {
+    color: #464962!important;
+}
+
+.text-green{
+	color: #50CD89!important;
+	background-color: #E8FFF3!important;
+}
+
+.badge-light-danger {
+    color: #F1416C!important;
+    background-color: #FFF5F8!important;
+}
+
+.select2-container {
+    width: 100% !important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background: #EEE5FF !important;
+    color: black !important;
+}
+.width_35em {
+	min-width: 35em;
+}
+
+.width_10em {
+	min-width: 10em;
+	max-width: 15em;
+}
+
+.width_15em {
+	min-width: 15em;
+	max-width: 15em;
+}
+
+.width_6em {
+	min-width: 6em;
+	max-width: 8em;
+}
+
+.labelColor {
+	color:#575656;
+}
+
+.dataColor {
+	color : #000000;
+}
+
+.select2-Width-97 .select2-container{
+	width: 97% !important;
+}
+
+.company_details, .company_technical_details, .company_presentation, .certificate_of_incorporation, .memorandum_and_articles, .gst_certificate, .company_pan_no, .last_three_years_itr, .rfp_attachment, .bond_attachment, .banking_limits_attachment, .order_book_and_future_projects_attachment, .project_track_records_attachment, .management_profiles_attachment{
+	color: rgba(0, 0, 0, 0);
+}
+
+.dmsIcon {
+	height: 55px;
+    width: 55px;
+}

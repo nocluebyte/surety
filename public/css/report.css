@@ -1,0 +1,15 @@
+/* developer: bhavik sapariya */
+
+.table-report {
+    overflow-y: auto;
+    height: 70vh;
+}
+
+.table-report-head {
+    position: sticky;
+    top: 0 !important;
+}
+
+.min-width-180 {
+    min-width: 180px !important;
+}

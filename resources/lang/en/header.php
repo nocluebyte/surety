@@ -1,0 +1,38 @@
+<?php
+
+return [
+
+    'quick_action' => 'Quick Action',
+    'sales' => 'Sales',
+    'teams' => 'Teams',
+    'functions' => 'Functions',
+    'cases' => 'Cases',
+    'agent' => 'Agent',
+    'broker' => 'Broker',
+    'underwriter' => 'Underwriter',
+    'employee' => 'Employee',
+    'principle' => 'Principle/Contractor',
+    'beneficiary' => 'Beneficiary',
+    'bond' => 'Bond',
+    'bid_bond' => 'Bid Bond',
+    'performance_bond' => 'Performance Bond',
+    'proposals' => 'Proposals',
+    'tender' => 'Tender',
+    'relationship_manager' => 'Relationship Manager',
+    'group' => 'Group',
+    'advance_payment_bond' => 'Advance Payment Bond',
+    'retention_bond' => 'Retention Bond',
+    'maintenance_bond' => 'Maintenance Bond',
+    'finance' => 'Finance',
+    'premium' => 'Premium',
+    'invocation' => 'Invocation',
+    'invocation_notification' => 'Invocation Notification',
+    'invocation_claims' => 'Invocation Claims',
+    'recovery' => 'Recovery',
+   
+    'adverse_information' => 'Adverse Information',
+    'blacklist' => 'Blacklist',
+    'project_details' => 'Project Details',
+    'bonds' => 'Bonds',
+    'claim_examiner' => 'Claim Examiner',
+];

@@ -1,0 +1,63 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    # Block OPTIONS requests
+    RewriteCond %{REQUEST_METHOD} OPTIONS
+    RewriteRule ^(.*)$ - [R=405,L]
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    # Force HTTPS connections
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+    # Prevent clickjacking
+    Header always set X-Frame-Options "DENY"
+
+    # Prevent MIME sniffing
+    Header always set X-Content-Type-Options "nosniff"
+
+    # Enable basic XSS filtering in older browsers
+    Header always set X-XSS-Protection "1; mode=block"
+
+    # Control referrer information
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Control access to browser features
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+
+    # Prevent caching of sensitive data
+    Header always set Cache-Control "no-store, no-cache, must-revalidate, proxy-revalidate"
+
+    # HTTP/1.0 compatibility (disable cache)
+    Header always set Pragma "no-cache"
+
+    # Prevent automatic opening of potentially malicious files
+    Header always set X-Download-Options "noopen"
+
+    # Restrict cross-domain policies for Adobe Flash/Acrobat
+    Header always set X-Permitted-Cross-Domain-Policies "none"
+
+    # Enforce Certificate Transparency (CT)
+    Header always set Expect-CT "max-age=86400, enforce"
+
+    # Mitigate XSS and other attacks
+    Header always set Content-Security-Policy "frame-ancestors 'none'"
+</IfModule>

@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'bond_cancellation' => 'Bond Cancellation',
+    'create_success' => 'Bond Cancellation added successfully',
+    'update_success' => 'Bond Cancellation updated successfully',
+    'name' => 'Name',
+    'add_bond_cancellation' => 'Add Bond Cancellation',
+
+    'bond_number' => 'Bond Number',
+    'contractor' => 'Contractor',
+    'beneficiary' => 'Beneficiary',
+    'project_details' => 'Project Details',
+    'tender' => 'Tender',
+    'bond_type' => 'Bond Type',
+    'bond_start_date' => 'Bond Start Date',
+    'bond_end_date' => 'Bond End Date',
+    'bond_conditionality' => 'Bond Conditionality',
+    'premium_amount' => 'Premium Amount',
+    'any_other_reasons' => 'Any Other Reasons',
+    'cancellation_date' => 'Cancellation Date',
+    'proof_of_foreclosure' => 'Proof of ForeClosure',
+    'refund' => 'Refund',
+    'refund_remarks' => 'Refund Remarks',
+    'original_bond_received' => 'Original Bond Received',
+    'confirming_foreclosure' => 'Confirming ForeClosure',
+    'any_other_proof' => 'Any Other Proof',
+    'remarks' => 'Remarks',
+    'attachment' => 'Attachment',
+    'bond_cancellation_attachment' => 'Bond Cancellation Attachment',
+];

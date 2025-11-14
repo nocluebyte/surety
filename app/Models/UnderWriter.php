@@ -1,0 +1,52 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Casts\Attribute;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Model;
+use Sentinel;
+
+class UnderWriter extends MyModel
+{
+    use HasFactory;
+    use \Venturecraft\Revisionable\RevisionableTrait;
+
+    protected $table = 'underwriters';
+    protected $revisionCleanup = true;
+    protected $historyLimit = 500;
+
+    protected $fillable = [
+        "id","company_name","type","address","city","country_id","state_id","pan_no","user_id","max_approved_limit","individual_cap","overall_cap","group_cap","is_active","ip","update_from_ip","created_by","updated_by","deleted_at","created_at","updated_at"
+    ];
+
+    protected static function boot()
+    {
+        parent::boot();
+    }
+
+    public  function  user(): BelongsTo{
+        return $this->belongsTo(User::class,'user_id','id');
+    }
+
+    // protected function panNo(): Attribute
+    // {
+    //     return Attribute::make(
+    //         set: fn (string $value) => strtoupper($value),
+    //     );
+    // }
+    protected $dependency = array(
+        'User' => array('field' => 'id', 'model' => User::class),
+    );
+
+    public function country()
+    {
+        return $this->belongsTo(Country::class, 'country_id');
+    }
+
+    public function state()
+    {
+        return $this->belongsTo(State::class, 'state_id');
+    }
+}

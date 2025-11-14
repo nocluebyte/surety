@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'bond_fore_closure' => 'Bond ForeClosure',
+    'create_success' => 'Bond ForeClosure added successfully',
+    'update_success' => 'Bond ForeClosure updated successfully',
+    'name' => 'Name',
+    'add_bond_fore_closure' => 'Add Bond ForeClosure',
+
+    'bond_number' => 'Bond Number',
+    'contractor' => 'Contractor',
+    'beneficiary' => 'Beneficiary',
+    'project_details' => 'Project Details',
+    'tender' => 'Tender',
+    'bond_type' => 'Bond Type',
+    'bond_start_date' => 'Bond Start Date',
+    'bond_end_date' => 'Bond End Date',
+    'bond_conditionality' => 'Bond Conditionality',
+    'premium_amount' => 'Premium Amount',
+    'type_of_foreclosure' => 'Type of ForeClosure',
+    'any_other_reasons' => 'Any Other Reasons',
+    'foreclosure_date' => 'ForeClosure Date',
+    'proof_of_foreclosure' => 'Proof of ForeClosure',
+    'refund' => 'Refund',
+    'refund_remarks' => 'Refund Remarks',
+    'original_bond_received' => 'Original Bond Received',
+    'confirming_foreclosure' => 'Confirming ForeClosure',
+    'any_other_proof' => 'Any Other Proof',
+    'remarks' => 'Remarks',
+    'attachment' => 'Attachment',
+];

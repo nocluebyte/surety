@@ -1,0 +1,28 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::table('bid_bond_logs', function (Blueprint $table) {
+            $table->unsignedBigInteger('parent_bid_bond_id')->nullable()->after('bid_bond_id');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::table('bid_bond_logs', function (Blueprint $table) {
+            $table->dropColumn(['parent_bid_bond_id']);
+        });
+    }
+};

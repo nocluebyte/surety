@@ -1,0 +1,32 @@
+<?php
+
+return [
+    'beneficiary' => 'Beneficiary',
+    'create_success' => 'Beneficiary added successfully',
+    'update_success' => 'Beneficiary updated successfully',
+    'name' => 'Name',
+    'add_beneficiary' => 'Add Beneficiary',
+    'edit_beneficiary' => 'Edit Beneficiary',
+    'dependency_error' => "This Beneficiary is used in :dependency.",
+    'review_generate' => "Beneficiary Review Generated Successfully.",
+
+    'bin' => 'BIN',
+    'company_code' => 'Company Code',
+    'reference_code' => 'Reference Code',
+    'registration_no' => 'Registration No',
+    'beneficiary_type' => 'Beneficiary Type',
+    'establishment_type' => 'Establishment Type',
+    'type_of_beneficiary_entity' => 'Type of Beneficiary Entity',
+    'bond_wording' => 'Bond Wording',
+    'bond_attachment' => 'Bond Attachment',
+    'trade_sector_id' => 'Trade Sector ID',
+    'trade_sector' => 'Trade Sector',
+    'website' => 'Website',
+    'till' => 'Till',
+    'from' => 'From',
+    'main' => 'Main',
+    'beneficiary_identification_number' => 'Beneficiary Identification Number',
+    'ministry_type' => 'Ministry Type',
+    'demo_file' => 'Demo File',
+    'upload_file' => 'Upload File',
+];

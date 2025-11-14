@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'group' => 'Group',
+    'create_success' => 'Group added successfully',
+    'update_success' => 'Group updated successfully',
+    'name' => 'Name',
+    'add_group' => 'Add Group',
+    'edit_group' => 'Edit Group',
+    'dependency_error' => "This Group is used in :dependency.",
+
+    'group_name' => 'Group Name',
+    'contractor' => 'Contractor',
+    'contractor_no' => 'Contractor No',
+    'contractor_name' => 'Contractor Name',
+    'group_cap' => 'Group Cap',
+    'country' => 'Country',
+    'type' => 'Type',
+    'last_updated_by' => 'Last Updated By',
+    'from' => 'From',
+    'till' => 'Till',
+    'action' => 'Action',
+    'created_by' => 'Created By',
+    'company_labels' => 'Company Labels',
+    'pending_application_limit' => 'Pending Application limit',
+    'total_approved_limit' => 'Total Approved limit',
+    'individual_cap' => 'Individual cap',
+    'overall_cap' => 'Overall Cap',
+    'regular_review_date' => 'Regular review date',
+    'no_data_available' => 'No data available',
+];

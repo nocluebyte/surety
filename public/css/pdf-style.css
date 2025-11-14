@@ -1,0 +1,34 @@
+.page_td{
+  border-bottom: 1px solid darkgrey;
+  border-spacing: 15px;
+  color: #000;
+}
+.pl{
+  padding-left: 15px;
+}
+td{
+  font-size: 14px;
+  font-weight: 500;
+}
+.page_th{
+  background: #e7bb8b;
+  color: #0a255c;
+  padding: 3px 0 3px 15px;
+  border-left: 3px solid #0a255c;
+}
+.p{
+  padding: 10px 0;
+}
+.heading_td{
+  text-align: center;
+  font-size: 16px;text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #0a255c;
+}
+.text_bold{
+  font-weight: bold;
+}
+.table_spacing {
+  margin-bottom: 10px;
+}
